@@ -30,7 +30,7 @@ const SCENES = [
     sub:    'Active Play',
     desc:   '讓孩子盡情跑跳、探索世界，為每一個活力瞬間精選安全好物',
     color:  'var(--active)',
-    img:    'https://images.unsplash.com/photo-1472162072942-cd5147eb3902?w=700&q=80&auto=format&fit=crop',
+    img:    'https://picsum.photos/seed/active-kids/700/500',
   },
   {
     key:    '靜',
@@ -38,7 +38,7 @@ const SCENES = [
     sub:    'Quiet Time',
     desc:   '培養專注與創造力的靜心時光，讓孩子在安靜中發現無限可能',
     color:  'var(--quiet)',
-    img:    'https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=700&q=80&auto=format&fit=crop',
+    img:    'https://picsum.photos/seed/quiet-kids/700/500',
   },
   {
     key:    '節日',
@@ -46,7 +46,7 @@ const SCENES = [
     sub:    'Celebrations',
     desc:   '讓每個節慶都成為家人共同珍藏的美好記憶，從禮物到佈置一次到位',
     color:  'var(--fest)',
-    img:    'https://images.unsplash.com/photo-1513151233558-d860c5398176?w=700&q=80&auto=format&fit=crop',
+    img:    'https://picsum.photos/seed/celebration/700/500',
   },
 ];
  
@@ -58,21 +58,21 @@ const PRODUCTS = [
     name: '戶外探索套裝',
     desc: '培養觀察力的自然探索工具組，適合 3 歲以上',
     price: 1280, tag: '熱銷',
-    img: 'https://images.unsplash.com/photo-1526746323784-6bc814d79273?w=500&q=80&auto=format&fit=crop',
+    img: 'https://picsum.photos/seed/outdoor-toy/500/400',
   },
   {
     id: 2, scene: '動',
     name: '彩虹平衡木組',
     desc: '鍛鍊平衡感與協調力的木質玩具，安全無毒',
     price: 2580, tag: '新品',
-    img: 'https://images.unsplash.com/photo-1555448248-2571daf6344b?w=500&q=80&auto=format&fit=crop',
+    img: 'https://picsum.photos/seed/balance-toy/500/400',
   },
   {
     id: 3, scene: '動',
     name: '親子運動套組',
     desc: '一起動起來，增進親子互動的戶外運動組合',
     price: 980, tag: '',
-    img: 'https://images.unsplash.com/photo-1599058945522-28d584b6f0ff?w=500&q=80&auto=format&fit=crop',
+    img: 'https://picsum.photos/seed/sport-kids/500/400',
   },
   /* 靜 */
   {
@@ -80,21 +80,21 @@ const PRODUCTS = [
     name: '木質磁力積木',
     desc: '啟發無限創造力，榉木製、安全環保認證',
     price: 1580, tag: '熱銷',
-    img: 'https://images.unsplash.com/photo-1560169897-fc0cdbdfa4d5?w=500&q=80&auto=format&fit=crop',
+    img: 'https://picsum.photos/seed/wooden-blocks/500/400',
   },
   {
     id: 5, scene: '靜',
     name: '兒童水彩畫具組',
     desc: '可水洗顏料，適合 2 歲以上，台灣製造',
     price: 680, tag: '',
-    img: 'https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=500&q=80&auto=format&fit=crop',
+    img: 'https://picsum.photos/seed/art-supplies/500/400',
   },
   {
     id: 6, scene: '靜',
     name: '親子桌遊禮盒',
     desc: '適合全家一起玩的策略合作桌遊，2–6 人',
     price: 1280, tag: '新品',
-    img: 'https://images.unsplash.com/photo-1606503825008-909a67e63c3d?w=500&q=80&auto=format&fit=crop',
+    img: 'https://picsum.photos/seed/board-game/500/400',
   },
   /* 節日 */
   {
@@ -102,21 +102,21 @@ const PRODUCTS = [
     name: '生日派對禮盒',
     desc: '讓寶貝生日成為最難忘的節慶，全套派對佈置',
     price: 1980, tag: '熱銷',
-    img: 'https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=500&q=80&auto=format&fit=crop',
+    img: 'https://picsum.photos/seed/birthday-gift/500/400',
   },
   {
     id: 8, scene: '節日',
     name: '親子手作燈籠組',
     desc: '傳承節慶文化，親子同樂的手作體驗組合',
     price: 480, tag: '季節限定',
-    img: 'https://images.unsplash.com/photo-1508963493744-76fce69379b0?w=500&q=80&auto=format&fit=crop',
+    img: 'https://picsum.photos/seed/lantern-craft/500/400',
   },
   {
     id: 9, scene: '節日',
     name: '聖誕親子禮盒',
     desc: '溫暖整個冬天的親子節慶套組，送禮自用兩相宜',
     price: 1580, tag: '預購中',
-    img: 'https://images.unsplash.com/photo-1512909006721-3d6018887383?w=500&q=80&auto=format&fit=crop',
+    img: 'https://picsum.photos/seed/christmas-gift/500/400',
   },
 ];
  
@@ -163,7 +163,7 @@ export default function Home() {
         <section className="hero">
           <div
             className="hero-bg"
-            style={{ backgroundImage: `url('https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=1800&q=85&auto=format&fit=crop')` }}
+            style={{ backgroundImage: `url('https://picsum.photos/seed/family-outdoor/1800/900')` }}
           />
           <div className="hero-overlay" />
           <div className="hero-content">
@@ -255,7 +255,7 @@ export default function Home() {
           <div className="container about-grid">
             <div className="about-img-wrap">
               <img
-                src="https://images.unsplash.com/photo-1476703993599-0035a21b6d6e?w=800&q=80&auto=format&fit=crop"
+                src="https://picsum.photos/seed/parentchild/800/1000"
                 alt="親子生活"
                 className="about-img"
                 loading="lazy"
