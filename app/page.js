@@ -255,7 +255,7 @@ export default function Home() {
           <div className="container about-grid">
             <div className="about-img-wrap">
               <img
-                src="https://images.unsplash.com/photo-1536773648834-5b87c8cac05f?w=800&q=80&auto=format&fit=crop"
+                src="https://images.unsplash.com/photo-1476703993599-0035a21b6d6e?w=800&q=80&auto=format&fit=crop"
                 alt="親子生活"
                 className="about-img"
                 loading="lazy"
