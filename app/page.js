@@ -15,10 +15,11 @@ import { useState } from 'react';
 const STORE_INFO = {
   name:        'JoyBounce Kids',
   nameChinese: '快樂彈跳親子選物',
-  phone:       '02-XXXX-XXXX',          // ← 請改成你的電話
-  email:       'hello@joybouncekids.com', // ← 請改成你的 Email
-  line:        '@joybouncekids',          // ← LINE 官方帳號 ID
-  instagram:   '@joybouncekids',          // ← Instagram 帳號
+  phone:       '0910-504-781',
+  email:       'hctonylee@gmail.com',
+  line:        '@joybouncekids',          // ← LINE 官方帳號 ID（可修改）
+  instagram:   '@joybouncekids',          // ← Instagram 帳號（可修改）
+  address:     '臺中市西區精誠16街39號3樓之一',
 };
  
 /* ─── 場景設定 ────────────────────────────────────────────── */
@@ -162,7 +163,7 @@ export default function Home() {
         <section className="hero">
           <div
             className="hero-bg"
-            style={{ backgroundImage: `url('https://images.unsplash.com/photo-1536337005238-94b997371b40?w=1800&q=85&auto=format&fit=crop')` }}
+            style={{ backgroundImage: `url('https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=1800&q=85&auto=format&fit=crop')` }}
           />
           <div className="hero-overlay" />
           <div className="hero-content">
@@ -339,6 +340,9 @@ export default function Home() {
           </div>
           <p className="footer-copy">
             © 2025 JoyBounce Kids. All rights reserved.｜台灣親子選物
+          </p>
+          <p className="footer-copy">
+            📍 {STORE_INFO.address}
           </p>
         </div>
       </footer>
