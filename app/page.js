@@ -13,7 +13,8 @@ import { useState } from 'react';
 /* ─── 聯絡資訊 ─────────────────────────────────────────── */
 const STORE_INFO = {
   name:        'JoyBounce Kids',
-  nameChinese: '快樂彈跳親子選物',
+  nameChinese: '躍木親子',
+  tagline:     '親子選物｜為每個家庭時刻精選',
   phone:       '0910-504-781',
   email:       'hctonylee@gmail.com',
   line:        '@joybouncekids',
@@ -88,8 +89,11 @@ export default function Home() {
       <nav className="navbar">
         <div className="nav-inner">
           <a href="/" className="logo">
-            <span className="logo-main">{STORE_INFO.name}</span>
-            <span className="logo-sub">{STORE_INFO.nameChinese}</span>
+            <div className="logo-row">
+              <span className="logo-main">{STORE_INFO.name}</span>
+              <span className="logo-zh">{STORE_INFO.nameChinese}</span>
+            </div>
+            <span className="logo-sub">{STORE_INFO.tagline}</span>
           </a>
           <div className="nav-links">
             <a href="#scenes">選物場景</a>
@@ -242,8 +246,11 @@ export default function Home() {
       <footer className="footer">
         <div className="container footer-inner">
           <div className="logo">
-            <span className="logo-main">{STORE_INFO.name}</span>
-            <span className="logo-sub">{STORE_INFO.nameChinese}</span>
+            <div className="logo-row">
+              <span className="logo-main">{STORE_INFO.name}</span>
+              <span className="logo-zh">{STORE_INFO.nameChinese}</span>
+            </div>
+            <span className="logo-sub">{STORE_INFO.tagline}</span>
           </div>
           <div className="footer-links">
             <a href="#scenes">選物場景</a>
