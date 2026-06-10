@@ -589,3 +589,286 @@ footer .logo-zh,
   border-radius: 99px;
   letter-spacing: 0.03em;
 }
+ 
+/* ── 子分類標籤列 ──────────────────────────────────────── */
+.subcat-row {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 14px;
+}
+ 
+.subcat-btn {
+  font-size: 12px;
+  padding: 5px 14px;
+  border-radius: 99px;
+  border: 1px solid var(--color-border, #EDE5DB);
+  background: transparent;
+  color: var(--muted, #8C7B6B);
+  cursor: pointer;
+  font-family: var(--font-body);
+  transition: all .18s;
+}
+ 
+.subcat-btn:hover { background: var(--light, #F7F2EC); }
+ 
+.subcat-active {
+  background: var(--dark, #1E1510) !important;
+  color: #FFFBF7 !important;
+  border-color: transparent !important;
+  font-weight: 500;
+}
+ 
+/* ── Empty state ───────────────────────────────────────── */
+.empty-state {
+  text-align: center;
+  padding: 60px 20px;
+  color: var(--muted, #8C7B6B);
+  font-size: 15px;
+}
+ 
+.btn-light-dark {
+  display: inline-block;
+  margin-top: 16px;
+  background: var(--dark, #1E1510);
+  color: #FFFBF7;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 99px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: var(--font-body);
+}
+ 
+/* ── Product age badge ─────────────────────────────────── */
+.prod-age {
+  position: absolute;
+  bottom: 10px; right: 10px;
+  background: rgba(255,251,247,0.92);
+  color: var(--muted, #8C7B6B);
+  font-size: 10px;
+  font-weight: 600;
+  padding: 3px 8px;
+  border-radius: 99px;
+  letter-spacing: 0.03em;
+  font-family: var(--font-body);
+}
+ 
+/* ── Modal ─────────────────────────────────────────────── */
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(20,13,8,.65);
+  backdrop-filter: blur(6px);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+ 
+.modal-box {
+  background: #FFFBF7;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 860px;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  box-shadow: 0 32px 80px rgba(20,13,8,.25);
+}
+ 
+.modal-close {
+  position: absolute;
+  top: 16px; right: 16px;
+  width: 32px; height: 32px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(42,33,24,.1);
+  color: #2A2118;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  transition: background .2s;
+}
+.modal-close:hover { background: rgba(42,33,24,.2); }
+ 
+.modal-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+}
+ 
+/* Gallery */
+.modal-gallery {
+  padding: 24px;
+  border-right: 1px solid #EDE5DB;
+}
+ 
+.modal-main-img {
+  border-radius: 12px;
+  overflow: hidden;
+  aspect-ratio: 1;
+  background: #F7F2EC;
+  margin-bottom: 12px;
+}
+ 
+.modal-main-img img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  transition: opacity .2s;
+}
+ 
+.modal-thumbs {
+  display: flex;
+  gap: 8px;
+}
+ 
+.modal-thumb {
+  width: 60px; height: 60px;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: border-color .2s;
+  background: #F7F2EC;
+}
+ 
+.modal-thumb.active { border-color: #1E1510; }
+.modal-thumb:hover  { border-color: #8C7B6B; }
+ 
+.modal-thumb img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+}
+ 
+/* Info */
+.modal-info {
+  padding: 28px 28px 28px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+ 
+.modal-scene-badge {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: #8C7B6B;
+  margin-bottom: 8px;
+}
+ 
+.modal-title {
+  font-family: var(--font-display, serif);
+  font-size: 22px;
+  font-weight: 500;
+  color: #1E1510;
+  letter-spacing: -.02em;
+  margin-bottom: 6px;
+  line-height: 1.25;
+}
+ 
+.modal-price {
+  font-size: 24px;
+  font-weight: 600;
+  color: #C94A2C;
+  margin-bottom: 14px;
+}
+ 
+.modal-why {
+  display: flex;
+  gap: 8px;
+  background: #F7F2EC;
+  border-radius: 10px;
+  padding: 10px 14px;
+  font-size: 13px;
+  color: #2A2118;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+ 
+.modal-why-icon { color: #C94A2C; flex-shrink: 0; font-size: 14px; }
+ 
+.modal-detail {
+  font-size: 14px;
+  color: #5C4E42;
+  line-height: 1.8;
+  margin-bottom: 16px;
+  flex: 1;
+}
+ 
+.modal-detail p { margin-bottom: 10px; }
+.modal-detail p:last-child { margin-bottom: 0; }
+ 
+.modal-specs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+ 
+.modal-spec-chip {
+  font-size: 11px;
+  padding: 3px 10px;
+  border-radius: 99px;
+  background: #EDE5DB;
+  color: #5C4E42;
+}
+ 
+.modal-cart-btn {
+  width: 100%;
+  padding: 12px;
+  background: #1E1510;
+  color: #FFFBF7;
+  border: none;
+  border-radius: 10px;
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 8px;
+  transition: background .2s;
+}
+.modal-cart-btn:hover { background: #3D2E22; }
+ 
+.modal-inquiry-btn {
+  width: 100%;
+  padding: 10px;
+  background: transparent;
+  color: #8C7B6B;
+  border: 1px solid #EDE5DB;
+  border-radius: 10px;
+  font-family: var(--font-body);
+  font-size: 13px;
+  cursor: pointer;
+  transition: all .2s;
+}
+.modal-inquiry-btn:hover { background: #F7F2EC; color: #2A2118; }
+ 
+/* Modal responsive */
+@media (max-width: 640px) {
+  .modal-inner { grid-template-columns: 1fr; }
+  .modal-gallery { border-right: none; border-bottom: 1px solid #EDE5DB; padding-bottom: 16px; }
+  .modal-main-img { aspect-ratio: 4/3; }
+  .modal-info { padding: 20px; }
+  .modal-title { font-size: 18px; }
+}
+ 
+/* Logo fixes already added */
+.logo-row { display: flex; align-items: baseline; gap: 10px; }
+.logo-zh {
+  font-family: var(--font-display, serif);
+  font-size: 17px;
+  font-weight: 500;
+  color: var(--dark, #1E1510);
+  letter-spacing: 0.05em;
+  line-height: 1;
+}
+footer .logo-zh, .footer .logo-zh { color: #FFFBF7 !important; }
+.footer .logo-sub { color: rgba(255,251,247,.50); font-size: 11px; letter-spacing: 0.04em; }
