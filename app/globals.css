@@ -576,3 +576,16 @@ footer .logo-zh,
 .footer .logo-zh {
   color: #FFFBF7 !important;
 }
+ 
+/* ── 商品年齡標籤 ───────────────────────────────────────── */
+.prod-age {
+  position: absolute;
+  bottom: 10px; right: 10px;
+  background: rgba(255,251,247,0.92);
+  color: var(--muted);
+  font-size: 10px;
+  font-weight: 600;
+  padding: 3px 8px;
+  border-radius: 99px;
+  letter-spacing: 0.03em;
+}
